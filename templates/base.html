@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Social Media</title>
+    <style>
+        .conteiner {
+            display: flex;
+            height: 10vh;
+            align-content: flex-start;
+            flex-wrap: wrap;
+            border: 10px solid green;
+            border-bottom: 0px;
+            border-radius: 30px;
+            background-color: green;
+        }
+        .conteiner>* {
+            flex-grow: 1;
+            background-color: #ff6600;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            border: 3px solid;
+            border-radius: 10px;
+            margin: 0px;
+            border: none;
+        }
+        .item 1 {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <h2 class="item 1">Профиль</h2>
+        <h2 class="item 2">Фото</h2>
+        <h2 class="item 3">Видео</h2>
+        <h2 class="item 4">Чаты</h2>
+        <h2 class="item 5">Настройки</h2>
+        <h2 class="item 6">Выход</h2>
+        <h2 class="item 7"><a href="/about_us">О нас</a></h2>
+    </div>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
